@@ -1,0 +1,31 @@
+
+body { font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.5rem; color: #444; margin: 0; }
+
+.container { width: clamp(600px, 90%, 1200px); margin: 0 auto; }
+
+header { border-bottom: 1px solid violet; }
+    h1 { text-align: center; color: darkviolet; }
+
+main { padding: 30px 0; }
+
+    .info { display: flex; align-items: center; gap: 40px; }
+
+    img { width: 400px; height: auto; }
+
+    h2 { color: chocolate; }
+
+    .table { margin: auto; width: 100%; text-align: left; border-collapse: collapse; }
+        .table th,
+        .table td { padding: 10px; }
+        .table tr:nth-child(even) { background-color: bisque; }
+    
+    input, 
+    select { padding: 10px; font-size: 20px; border-radius: 5px; border: 1px solid #a0a0a0; }
+
+    button { padding: 10px 20px; font-size: 20px; border-radius: 5px; border: 1px solid darkviolet; background-color: darkviolet; color: #fff; }
+    button:hover { background-color: #fff; color: darkviolet; }
+
+
+footer { padding: 20px 0; background-color: pink; color: white; text-align: center }
+    footer a { color: white; }
+    footer a:hover { color: tomato; }

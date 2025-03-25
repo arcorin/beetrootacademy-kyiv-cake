@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyiv cake</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kyiv cake</h1>
+        </header>
+        <main>
+            <div class="info">
+                <div class="img-wrap">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/6/69/Kiev_cake_slice.JPG" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/wikipedia-kiev-cake-slice.jpeg" alt="Kyiv cake" width="500px" height="auto">
+                    </a>
+                </div>
+                <div class="content">
+                    <p> The Kyiv Cake is a confectionery delicacy produced by the Kyiv Confectionery Factory. Throughout its seventy-year history, it has evolved into a symbol of Kyiv and a popular souvenir. </p>
+                    <p> The cake comprises two layers of beaten egg whites with interludes of buttery whipped cream. The cake's surface is adorned with various creams, while the sides are coated with crushed nuts. </p>
+                    <p> The packaging is a round box featuring an illustration of a vibrant green chestnut branch and two little chestnuts. </p>
+                </div>
+            </div>
+            <section>
+                <h2>Fun facts</h2>
+                <ul>
+                    <li>
+                        <p>Once, the confectioners forgot to place a batch of egg whites meant for sponge cake in the refrigerator. The following day, Kostiantyn Petrenko, the head of the sponge cake department, took a risk with the help of Nadiia Chornohor, a 17-year-old assistant to the confectioner, to cover up their colleagues' mistake. They layered the chilled egg white sheets with buttercream, dusted them with powdered vanilla, and adorned the surface with a floral pattern. This marked the birth of the cake's predecessor, which was destined to become Kyiv's iconic delicacy for decades to come.</p>
+                    </li>
+                    <li>
+                        <p>On December 8, 2020, the bronze miniature sculpture of the "Kyiv Cake" made its debut on the façade of the Roshen Factory in Kyiv (1 Nauky Avenue) as part of the "Shukai!" ("Seek!") project. The sculptor behind the sculpture is Daria Vovk. Its hallmark is "Pinch me — and you'll always stay slim."</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Properties</h2>
+                <table class="table">
+                    <tr>
+                        <th>Type</th>
+                        <td>Dessert</td>
+                    </tr>
+                    <tr>
+                        <th>Origin</th>
+                        <td>Ukrainian cuisine</td>
+                    </tr>
+                    <tr>
+                        <th>Author</th>
+                        <td>K. Petrenko, N. Chornohor</td>
+                    </tr>
+                    <tr>
+                        <th>Time of emergence</th>
+                        <td>1956</td>
+                    </tr>
+                    <tr>
+                        <th>Energy value per 100 g</th>
+                        <td>481 kcal</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2>Calculations</h2>
+                <p>
+                    Let's calculate how much exercise it takes to burn the calories from the cake.
+                </p>
+                <!-- return false; -> prevents the page from reloading -->
+                <form id="form" onsubmit="calc(event);">
+                    <input type="number" min="1" id="quantity" placeholder="Number of portions">
+                    <select name="" id="exercise">
+                        <option value="">Choose exercise</option>
+                        <option value="walk">Walk</option>
+                        <option value="run">Run</option>
+                        <option value="fitness">Fitness</option>
+                    </select>
+                    <button type="submit" id="btn-submit">Calculate</button>
+                </form>
+                <ul>
+                    <li>
+                        <b>Total energy value</b>
+                        <span id="total_kcal"></span>
+                    </li>
+                    <li>
+                        <b>Result*:</b>
+                        <span id="result"></span>
+                    </li>
+                </ul>
+                <small>* The result is approximate and based on average data. For a more accurate result, individual parameters should be taken into account: weight, height, age, average daily activity, etc.</small>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Original article in Ukrainian:
+                <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%82%D0%BE%D1%80%D1%82" target="_blank" rel="noopener noreferrer">wikipedia.org </a>
+            </p>
+            <p>
+                Beetroot Academy - Intro to Front End development <a href="https://intro.beetroot.academy/en-lesson/itit-fe-lesson-1">Project</a>
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
